@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon_mindy.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>Mindy Petshop - Farmacia</title>
+</head>
+<body class="body-container">
+    <div class="body-color">
+    <header class="header-container">
+        <nav class="navbar navbar-expand-lg mx-5">
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../assets/img/logo_mindy_uno.png" class="img-logo ms-5"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid d-flex justify-content-evenly align-items-center gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Producto
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                                <li><a class="dropdown-item active-p" href="#">Farmacia</a></li>
+                                <li><a class="dropdown-item " href="./accesorios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown-center">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="50,20">
+                                <img src="../assets/img/shop.jpg" class="img-fluid"
+                                width="50px"></img>
+                              </button>
+                            <div id="carrito" class="dropdown-menu text-center" aria-labelledby="dropdownMenuOffset">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="text-center">Producto</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cuerpoCarrito">
+        
+                                    </tbody>
+                                    <tbody id="cuerpoTotal">
+                                        
+                                    </tbody>
+                                </table>
+    
+                                <a class="btn btn-danger vaciarCarrito boton-carrito">Vaciar Carrito</a>
+                                <a href="./carrito.html" id="procesar-pedido" class="btn btn-success boton-carrito">Finalizar compra</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container pb-5 ">
+        <div class="d-flex justify-content-evenly mx-5 gap-3 my-5 container-search text-white">
+            <img src="../assets/img/juguete_uno.png" class="iconos-jyf" alt="icono">
+            <div class="d-flex align-items-center justify-content-center gap-4 precios">
+                <label class=" d-flex align-items-center gap-4">Precio minimo
+                    <input type="text" class="form-control imputNumber" id="min" name="name" required minlength="1" maxlength="4">
+                </label>
+                <label class=" d-flex align-items-center gap-4">Precio maximo
+                    <input type="text" class="form-control imputNumber" id="max" name="name" required minlength="1" maxlength="4">
+                </label>
+            </div>
+            <div role="search" class=" d-flex align-items-center">
+                <input id="searchId" class="form-control me-2" type="search" placeholder="Buscar">
+            </div>
+            <img src="../assets/img/alimento_uno.png" class="iconos-jyf" alt="icono">
+        </div>
+        <div id="elementContainer" class="d-flex flex-wrap gap-5 justify-content-center">
+
+        </div>
+    </main>
+    <img src="../assets/img/footer-wave.svg">
+    <footer class="footer-container d-flex flex-column">
+        <div class="d-flex justify-content-around py-4 footer-primary">
+            <div class="logo-footer-container text-center">
+                <img class="logo-footer" src="../assets/img/footerLogo.png" alt="logo Mindy">
+                <h5>Síguenos en redes:</h5>
+                <div class="socialmedia-container d-flex justify-content-center gap-4">
+                    <a href="https://web.whatsapp.com/"><img class="redes-img" src="../assets/img/whatsapp.png"
+                            alt="whatsapp logo"></a>
+                    <a href="https://www.instagram.com/"><img class="redes-img" src="../assets/img/instagram.png"
+                            alt="instagram logo"></a>
+                    <a href="https://www.facebook.com/"><img class="redes-img" src="../assets/img/facebook.png"
+                            alt="facebook logo"></a>
+                </div>
+            </div>
+
+            <div class="map-text d-flex flex-column justify-content-center align-items-center">
+                <h3>Contáctanos:</h3>
+                <p>Lunes a domingo: 7:00 a.m. a 6:00 p.m.</p>
+                <p><img src="../assets/img/telefono.png"> Teléfono: +57 321 984 8497</p>
+                <p> <img src="../assets/img/direccion.png">Dirección: Río de Janeiro 300 (Caballito)</p>
+                <p><a href="https://mail.google.com/mail/u/0/"><img src="../assets/img/correo.png" alt=""> Correo:
+                        mindypetshop@gmail.com</a></p>
+            </div>
+
+            <div class="text-center map-text">
+                <h3>Ubicación</h3>
+                <h5>¿Cómo llegar a Mindy Petshop?</h5>
+                <iframe class="map-img"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9287.856439170097!2d-58.43334912334138!3d-34.61040344712164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses!2sar!4v1666755628652!5m2!1ses!2sar"
+                    width="300" height="200" style="border-radius: .5em" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-container2 text-white d-flex justify-content-center py-2">
+            <h6>Mindy Petshop® 2022 | By grupo 3 ♥</h6>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </div>
+</body>
+</html>

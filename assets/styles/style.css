@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styles Carrousel y nav */
+
+.noMostrar {
+    display: none;
+}
+
+.header-container {
+    background-color: #a6bfcc;
+}
+
+.active {
+    background: #cfd8dc;
+    border-radius: 10px 0px 10px 0px;
+    color: #883997 !important;
+}
+
+.active-p {
+    background: #cfd8dc;
+    border-radius: 10px 0px 10px 0px;
+    color: #883997 !important;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.nav-link:hover {
+    background: linear-gradient(45deg, rgb(193, 131, 255) 0%, rgb(208, 89, 255) 50%, rgb(201, 155, 247) 100%);
+    ;
+    border-radius: 10px 0px 10px 0px;
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(45deg, rgb(193, 131, 255) 0%, rgb(208, 89, 255) 50%, rgb(201, 155, 247) 100%);
+    ;
+    color: white;
+}
+
+.img-logo {
+    width: 70%;
+    height: 10vh;
+}
+
+.img-carrusel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0% 40%;
+}
+
+/* main index */
+
+.body-color{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.body-container {
+    background-image: url("/assets/img/bg-body.png");
+    
+}
+
+.history-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.history-img img {
+    width: 100%;
+}
+
+.history-text {
+    color: white;
+    width: 50%;
+    background-color: #883997;
+    padding: 1.5em 4em .5em 4em;
+    border-radius: 2em;
+    box-shadow: 9px 11px 23px 5px rgba(44, 44, 44, 0.8);
+    text-align: center;
+    line-height: 2em;
+}
+
+.misionyvision-container {
+    width: 100%;
+    background-color: #a6bfcc;
+    margin-top: 2.5em;
+}
+
+.mision-container {
+    width: 80%;
+    display: flex;
+    padding: 2.5em;
+    gap: 2em;
+}
+
+.mision-text {
+    background-color: rgba(255, 255, 255, 0.638);
+    border-radius: 2em;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 9px 11px 23px 5px rgba(44, 44, 44, 0.8);
+}
+
+.mision-text h2 {
+    color: #6a0080;
+}
+
+.mision-text p {
+    color: #3b4a51;
+    line-height: 2em;
+    font-size: .9em;
+
+}
+
+.vision-container {
+    width: 80%;
+    display: flex;
+    padding: 2.5em;
+}
+
+.vision-img {
+    width: 25.5%;
+}
+
+.vision-img img {
+    width: 100%;
+}
+
+.vision-text {
+    line-height: 2em;
+    background-color: rgba(255, 255, 255, 0.638);
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 9px 11px 23px 5px rgba(44, 44, 44, 0.8);
+}
+
+.vision-text h2 {
+    color: #6a0080;
+}
+
+.vision-text p {
+    color: #3b4a51;
+    line-height: 2em;
+    font-size: .9em;
+}
+
+.img-marcas {
+    height: 250px;
+    width: 60px;
+    object-fit: contain;
+}
+
+/* Styles farmacia, juguetes y carrito */
+
+.main-container {
+    width: 100%;
+}
+
+.ultUnidades {
+    width: 60%;
+    padding: .1em;
+    margin-top: .4em;
+    border-radius: .3em;
+    font-weight: bold;
+    background-color: rgb(253, 34, 34);
+    color: white;
+    text-align: center;
+}
+
+.ultimaUnidad {
+    width: 46%;
+}
+
+.unidades {
+    width: 60%;
+    padding: .1em;
+    margin-top: .4em;
+    border-radius: .3em;
+    background-color: rgb(43, 139, 43);
+    color: white;
+    text-align: center;
+}
+
+/* Edicion Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 365px;
+    height: 35em;
+    padding: .8em;
+    background: #eeeeee;
+    position: relative;
+    overflow: visible;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0 2px 4px rgba(240, 70, 255, 0.692), 0 2px 4px rgba(231, 62, 247, 0.692);
+}
+
+.card-img {
+    background-color: #ffa6ec;
+    height: 200px;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    object-fit: cover;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+    border-top: 1px solid #ddd;
+    background-color: transparent;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    color: #9c27b0;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.text-body {
+    font-size: .8em;
+    border-radius: .3em;
+    color: #373737 !important;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #f698ff;
+    display: flex;
+    padding: .4em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .2s ease-in-out;
+}
+
+.card-button2 {
+    background-color: rgba(11, 205, 21, 0.833);
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-5%);
+    box-shadow: rgba(218, 31, 255, 0.25) 0px 13px 47px -5px, rgba(252, 47, 241, 0.486) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #a32dad;
+    background-color: #ffb0ee;
+}
+
+/* Deco juguetes y farmacia */
+
+.container-search {
+    background-color: #c58acfbb;
+    padding: 0.2em;
+    border-radius: 30px;
+}
+
+.iconos-jyf {
+    height: 50px;
+    width: 50px;
+}
+
+/* Styles footer */
+.footer-container {
+    background-color: #a6bfcc;
+    color: #4a626d;
+    margin-top: -1.8em;
+}
+
+.footer-container h3 {
+    color: #6a0080;
+}
+
+.redes-img {
+    width: 2em;
+}
+
+.logo-footer {
+    width: 12em;
+}
+
+.footer-container2 {
+    background-color: #4a626d;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.map-text img {
+    width: 1.4em;
+}
+
+.map-text a {
+    text-decoration: none;
+    color: #3b4a51;
+}
+
+.map-text {
+    line-height: 1em;
+}
+
+.imputNumber {
+    width: 4.2em;
+}
+
+/*contacto*/
+.main-contact {
+  
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#formUbication {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uwu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+#username {
+    width: 49%
+}
+
+#textArea {
+    margin-top: 10px;
+}
+
+.h2-contact {
+    text-align: center;
+    color: #4a626d;
+}
+
+.h4-contact {
+    color: #4a626d;
+}
+
+.form-check-label {
+    color: #6d4a4a;
+}
+
+#checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#button {
+    padding-top: 15px;
+}
+
+#submit-btn {
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #4a626d;
+    color: white;
+    height: 40px;
+
+}
+
+#submit-btn:hover {
+    background-color: #4a626da1;
+    color: #1a282e;
+}
+
+.boton-carrito {
+    width: 75%;
+    padding: .5em;
+    margin: .5em;
+    font-size: 1rem;
+}
+
+td {
+    font-size: .9rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .footer-primary {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .misionyvision-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-search {
+        flex-direction: column;
+    }
+
+    .precios {
+        flex-direction: column;
+    }
+
+    .history-text {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vision-img {
+        display: none;
+    }
+
+    .shop {
+        font-size: .7rem;
+    }
+
+    .misionyvision-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    td {
+        font-size: .5rem;
+    }
+
+    .container-search {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision-container {
+        width: 90%;
+        padding: 2.5em .5em 2.5em .5em;
+    }
+
+    .mision-container {
+        width: 90%;
+        padding: 2.5em .5em 2.5em .5em;
+    }
+
+    .vision-text {
+        width: 100%;
+    }
+
+    .history-text {
+        width: 90%;
+        font-size: .8em;
+    }
+}
